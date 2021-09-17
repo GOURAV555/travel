@@ -1,0 +1,650 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>Service</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="files/bootstrap.min.css">
+
+	<!--fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Lobster+Two&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Amaranth&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Asap+Condensed&display=swap" rel="stylesheet">
+	<!--fonts-->
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+		integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+
+	<style>
+		.bg-light {
+			background-color: #333 !important;
+		}
+
+
+		.navbar-light .navbar-nav .nav-link {
+			color: rgb(255, 255, 255);
+		}
+
+		.navbar-light .navbar-nav .active>.nav-link,
+		.navbar-light .navbar-nav .nav-link.active,
+		.navbar-light .navbar-nav .nav-link.show,
+		.navbar-light .navbar-nav .show>.nav-link {
+			color: #fff;
+		}
+
+		.navbar-light .navbar-nav .nav-link:focus,
+		.navbar-light .navbar-nav .nav-link:hover {
+			color: #fff;
+		}
+
+		.navbar-toggler {
+			float: right;
+			background: white;
+			position: absolute;
+			right: 0;
+			top: 11px;
+		}
+
+
+
+
+
+
+
+		body {
+			letter-spacing: 2px;
+			text-transform: capitalize;
+		}
+
+		.heading {
+			margin-left: 20px;
+		}
+
+		.header {
+			
+			padding-top: 11px;
+			padding-bottom: 5px;
+			background: #333;
+		}
+
+		h1 {
+			font-family: 'Open Sans', sans-serif;
+			color: white;
+		}
+
+		.heading h1 {
+			font-size: 30px;
+			margin-left: 10px;
+		}
+
+		.heading a {
+			color: white;
+			text-decoration: none;
+		}
+
+		.heading i {
+			color: white;
+			position: absolute;
+			top: 6px;
+			font-size: 30px;
+			left: 9px;
+		}
+
+		.list ul li a {
+			color: white;
+			font-size: 15px;
+		}
+
+
+		.aboutimg {
+			width: 100%;
+			height: 300px;
+			background-color: #555;
+			background-blend-mode: multiply;
+			object-fit: cover;
+		}
+
+
+		.desti p {
+			text-align: justify;
+			margin-top: 20px;
+		}
+
+
+		.sheading h1 {
+			color: black;
+			font-size: 50px;
+			font-family: 'Fjalla One', sans-serif;
+			text-align: center;
+		}
+
+		.serbox {
+			font-family: 'Yanone Kaffeesatz', sans-serif;
+			font-size: 24px;
+			text-align: center;
+			background: #047ffc;
+			padding-top: 12px;
+			padding-bottom: 10px;
+			color: white;
+		}
+
+		.sbox {
+			padding-top: 20px;
+			padding-bottom: 10px;
+			margin-top: 22px;
+		}
+
+		.sbox i {
+			color: blue;
+			margin-left: 113px;
+			font-size: 30px;
+		}
+
+		.sbox h6 {
+			font-size: 25px;
+			text-align: center;
+		}
+
+		.sbox p {
+			font-size: 15px;
+			text-align: center;
+		}
+
+		h6 {
+			font-family: 'Lobster Two', cursive
+		}
+
+		p {
+			font-family: 'Amaranth', sans-serif;
+		}
+
+		.enjoy {
+			background: url(images/banner2.jpg);
+			width: 100%;
+			height: auto;
+			padding-bottom: 50px;
+			background-color: #555;
+			background-blend-mode: multiply;
+		}
+
+		.enj h1 {
+			padding-top: 65px;
+			font-size: 50px;
+		}
+
+		.enj p {
+			color: white;
+			font-family: 'Asap Condensed', sans-serif;
+		}
+
+		.tourpa {
+			position: relative;
+			padding-top: 50px;
+		}
+
+		.tourismhead h1 {
+			color: #323648;
+			text-align: center;
+			font-family: 'Fjalla One', sans-serif;
+		}
+
+		.tourpa h6 {
+			font-family: none;
+			font-size: 25px;
+		}
+
+		.tourpa p {
+			color: grey;
+		}
+
+		.tourpa i {
+			margin-top: 20px;
+			position: absolute;
+			top: 184px;
+			left: 0px;
+			color: #047ffc;
+		}
+
+		.tourimages {
+			margin-top: 20px;
+		}
+
+
+		.footer {
+			margin-top: 30px;
+			background: black;
+			color: white;
+			width: 100%;
+			height: auto;
+		}
+
+		.footer h5 {
+			margin-top: 25px;
+		}
+
+		.footlist ul li {
+			background: black;
+			line-height: 1.5;
+			color: grey
+		}
+
+		.footlist2 p {
+			color: grey;
+			padding-top: 20px;
+		}
+
+		.footlist2 ul li a i {
+			color: white;
+			margin-left: 7px;
+			border: 1px groove white;
+			text-align: center;
+			font-size: 20px;
+			padding: 8px 8px;
+			background: #007bff;
+		}
+
+		.footlist3 ul li a {
+			color: grey;
+			line-height: 2;
+			text-align: center;
+			text-decoration: none;
+		}
+
+		.footlist3 ul {
+			margin-top: 25px;
+		}
+
+		.footlist3 h5 {
+			font-size: 14px;
+		}
+
+		.chnge {
+			padding-top: 71px;
+			line-height: 2;
+		}
+
+		.footerlist4 ul li a {
+			text-decoration: none;
+			color: grey;
+		}
+
+		.footerlist5 p {
+			margin-top: 30px;
+			text-align: justify;
+			color: grey;
+		}
+
+		.footerlist5 button {
+			width: 100%;
+			height: 50px;
+			border-color: grey;
+			color: grey;
+		}
+
+		.btn-outline-danger:hover {
+			color: grey;
+			background-color: transparent;
+			border-color: grey;
+		}
+
+		.footerlist5 i {
+			font-size: 20px;
+			margin-left: 63px;
+		}
+
+		.mainfooter {
+			height: auto;
+			background: #707579;
+			text-align: center;
+			color: black;
+		}
+
+		.last {
+			margin-top: 20px;
+		}
+
+		@media (max-width:600px) {
+			body .tourpa i {
+				top: 159px;
+			}
+
+			.sbox i {
+				margin-left: 145px;
+			}
+
+		}
+	</style>
+
+<body>
+	<!--header-->
+	<section class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-5">
+					<div class="heading">
+						<i class="fas fa-map-signs"></i>
+						<a href="index.html">
+							<h1>Grand Tour
+						</a></h1>
+					</div>
+				</div>
+				<div class="col-7">
+					<div class="list" style="float:right;">
+						<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+							<button class="navbar-toggler" type="button" data-toggle="collapse"
+								data-target="#navbarSupportedContent">
+								<span class="navbar-toggler-icon"></span>
+							</button>
+
+							<div class="collapse navbar-collapse headlist" id="navbarSupportedContent">
+								<ul class="navbar-nav mr-auto">
+									<li class="nav-item active">
+										<a class="nav-link" href="index.html">Home <span
+												class="sr-only">(current)</span></a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="about.html">About Us</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="services.html">Services</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="packages.html">Packages</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="contact.html">Contact</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link active" href="book Now.html">Book Now</a>
+									</li>
+						</nav>
+
+						</ul>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		</div>
+
+	</section>
+	<!--header-->
+
+
+
+	<!--slider-->
+	<Section class="slider">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="aboutimg">
+					<img src="images/banner3.jpg" class="aboutimg">
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--slider-->
+	<br><br>
+	<!--services-->
+	<section class="services">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="sheading">
+						<h1>Our Services</h1>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="serbox">
+						<p>The Journey Of A Thousand Miles Begins With A Single Step.</p>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="sbox">
+						<i class="fas fa-building"></i>
+						<h6>Accomodation</h6>
+						<p>Duis nisi sapien, elementum et finibus et fermen eget, aliquet etleo. Mauris vel ex.</p>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="sbox">
+						<i class="fab fa-free-code-camp"></i>
+						<h6>Winter Tours</h6>
+						<p>Duis nisi sapien, elementum et finibus et fermen eget, aliquet etleo. Mauris vel ex.</p>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="sbox">
+						<i class="fas fa-users"></i>
+						<h6>Exp Agents</h6>
+						<p>Duis nisi sapien, elementum et finibus et fermen eget, aliquet etleo. Mauris vel ex.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+
+				<div class="col-md-3">
+					<div class="serbox">
+						<p>The Journey Of A Thousand Miles Begins With A Single Step.</p>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="sbox">
+						<i class="fas fa-money-bill-alt"></i>
+						<h6>Low Prices</h6>
+						<p>Duis nisi sapien, elementum et finibus et fermen eget, aliquet etleo. Mauris vel ex.</p>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="sbox">
+						<i class="fas fa-binoculars"></i>
+						<h6>Easy Booking</h6>
+						<p>Duis nisi sapien, elementum et finibus et fermen eget, aliquet etleo. Mauris vel ex.</p>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="sbox">
+						<i class="fas fa-camera"></i>
+						<h6>Best Packages</h6>
+						<p>Duis nisi sapien, elementum et finibus et fermen eget, aliquet etleo. Mauris vel ex.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--services-->
+		<!--enjoy-->
+		<section class="enjoy">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8">
+						<div class="enj">
+							<h1>Enjoy The Trip</h1>
+							<p>Duis nisi sapien, elementum finibus fermentum eget, aliquet leo et. Mauris hendrerit vel
+								ex. Quisque vitae luctus massa. Phasellus sed aliquam leo a massa eu fringilla. Integer
+								ultrices finibus sed nisi. in convallis felis dapibus sit amet.</p>
+							<button type="button" class="btn btn-outline-primary bt">Book Now</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--enjoy-->
+		<br><br>
+		<!--Tourism-->
+		<section class="tourism">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="tourismhead">
+							<h1>Tourism Places</h1>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="tourimages">
+							<img src="images/japan.jpg" alt="t1" class="img-thumbnail">
+						</div>
+					</div>
+
+					<div class="col-md-3">
+						<div class="tourpa">
+							<h6>JAPAN</h6>
+							<P>Sed ut perspiciatis unde omnis istes natus error sit volup tatem accusani tium doloremque
+								laudantium.</p>
+							<i class="far fa-clock"></i>
+							<p style="color:black;margin-left:20px;">Duration : 2 Days, 3hrs</p>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="tourimages">
+							<img src="images/singapore.jpg" alt="t1" class="img-thumbnail">
+						</div>
+					</div>
+
+					<div class="col-md-3">
+						<div class="tourpa">
+							<h6>Singapore</h6>
+							<P>Sed ut perspiciatis unde omnis istes natus error sit volup tatem accusani tium doloremque
+								laudantium.</p>
+							<i class="far fa-clock"></i>
+							<p style="color:black;margin-left:20px;">Duration : 2 Days, 3hrs</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+
+					<div class="col-md-3">
+						<div class="tourimages">
+							<img src="images/malaysia.jpg" alt="t1" class="img-thumbnail">
+						</div>
+					</div>
+
+					<div class="col-md-3">
+						<div class="tourpa">
+							<h6>Malaysia</h6>
+							<P>Sed ut perspiciatis unde omnis istes natus error sit volup tatem accusani tium doloremque
+								laudantium.</p>
+							<i class="far fa-clock"></i>
+							<p style="color:black;margin-left:20px;">Duration : 2 Days, 3hrs</p>
+						</div>
+					</div>
+
+					<div class="col-md-3">
+						<div class="tourimages">
+							<img src="images/china.jpg" alt="t1" class="img-thumbnail">
+						</div>
+					</div>
+
+					<div class="col-md-3">
+						<div class="tourpa">
+							<h6>China</h6>
+							<P>Sed ut perspiciatis unde omnis istes natus error sit volup tatem accusani tium doloremque
+								laudantium.</p>
+							<i class="far fa-clock"></i>
+							<p style="color:black;margin-left:20px;">Duration : 2 Days, 3hrs</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+		<!--Tourism-->
+
+		<!--footer-->
+		<section class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<div class="footlist">
+							<h5>Address</h5>
+							<ul class="list-group">
+								<li class="list-group-item ">Location : 1234 lock, Charlotte, North Carolina, United
+									States</li>
+								<li class="list-group-item">Phone : +12 534894364</li>
+								<li class="list-group-item">Morbi leo risus</li>
+								<li class="list-group-item">Email : info@example.com</li>
+								<li class="list-group-item">Fax : +12 534894364</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="footlist2">
+							<h5>About Us</h5>
+							<p>Vivamus magna justo, laci niats eget consectetur sed, conval lis at tellus. Nulla quis
+								lorem ipnt libero. Lorem ipsum dolor.</p>
+							<ul class="nav list1">
+								<li class="nav-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+								<li class="nav-item"><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+								<li class="nav-item"><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+								<li class="nav-item"><a href="#"><i class="fab fa-linkedin"></i></a></li>
+
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="footlist3">
+									<h5>Travel Places</h5>
+									<ul class="list-unstyled">
+										<li><a href="#">New Zealand</a></li>
+										<li><a href="#">Paris, France</a></li>
+										<li><a href="#">Los Angles</a></li>
+										<li><a href="#">Darlington</a></li>
+										<li><a href="#">Canada</a></li>
+										<li><a href="#">Canada</a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="col-md-6">
+								<div class="footerlist4">
+									<ul class="list-unstyled chnge">
+										<li><a href="#">Spain</a></li>
+										<li><a href="#">Turkey</a></li>
+										<li><a href="#">Europe</a></li>
+										<li><a href="#">Italy</a></li>
+										<li><a href="#">Sweden</a></li>
+									</ul>
+
+								</div>
+							</div>
+						</div>
+
+
+					</div>
+
+					<div class="col-md-3">
+						<div class="footerlist5">
+							<h5>Newsletter</h5>
+							<p>By subscribing to our mailing list you will always get latest news and updates from us.
+							</p>
+							<button type="button" class="btn btn-outline-danger bt">Enter Your Email...<i
+									class="fab fa-telegram-plane"></i></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--footer-->
+
+		<!--mainfooter-->
+		<section class="mainfooter">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="last">
+							<p>© 2019 Grand Tour. All Rights Reserved | Design by W3layouts</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--mainfooter-->
+		<script src="files/jquery-3.4.1.min.js"></script>
+		<script src="files/bootstrap.min.js"></script>
+</body>
+
+</html>

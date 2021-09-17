@@ -1,0 +1,699 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>Packages</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="files/bootstrap.min.css">
+
+	<!--fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Lobster+Two&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Amaranth&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Asap+Condensed&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Slabo+27px&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+	<!--fonts-->
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+		integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+
+	<style>
+		.bg-light {
+			background-color: #333 !important;
+		}
+
+
+		.navbar-light .navbar-nav .nav-link {
+			color: rgb(255, 255, 255);
+		}
+
+		.navbar-light .navbar-nav .active>.nav-link,
+		.navbar-light .navbar-nav .nav-link.active,
+		.navbar-light .navbar-nav .nav-link.show,
+		.navbar-light .navbar-nav .show>.nav-link {
+			color: #fff;
+		}
+
+		.navbar-light .navbar-nav .nav-link:focus,
+		.navbar-light .navbar-nav .nav-link:hover {
+			color: #fff;
+		}
+
+		.navbar-toggler {
+			float: right;
+			background: white;
+			position: absolute;
+			right: 0;
+			top: 11px;
+		}
+
+
+
+
+
+
+
+		body {
+			letter-spacing: 2px;
+			text-transform: capitalize;
+		}
+
+		.heading {
+			margin-left: 20px;
+		}
+
+		.header {
+			
+			padding-top: 11px;
+			padding-bottom: 5px;
+			background: #333;
+		}
+
+		h1 {
+			font-family: 'Open Sans', sans-serif;
+			color: white;
+		}
+
+		.heading h1 {
+			font-size: 30px;
+			margin-left: 10px;
+		}
+
+		.heading a {
+			color: white;
+			text-decoration: none;
+		}
+
+		.heading i {
+			color: white;
+			position: absolute;
+			top: 6px;
+			font-size: 30px;
+			left: 9px;
+		}
+
+		.list ul li a {
+			color: white;
+			font-size: 15px;
+		}
+
+
+		.aboutimg {
+			width: 100%;
+			height: 300px;
+			background-color: #555;
+			background-blend-mode: multiply;
+			object-fit: cover;
+		}
+
+
+		.dishead h1 {
+			text-align: center;
+			color: black;
+			padding-top: 40px;
+		}
+
+		.disheadp p {
+			text-align: center;
+			font-size: 19px;
+			font-family: 'Slabo 27px', serif;
+			letter-spacing: 1px;
+		}
+
+		.center {
+			margin: auto;
+		}
+
+
+		.packages {
+			text-align: center;
+			position: relative
+		}
+
+		.packagesheading h1 {
+			color: black;
+		}
+
+		.packagesheading p {
+			color: grey;
+		}
+
+		.packbtn {
+			margin: auto;
+		}
+
+		.box i {
+			position: absolute;
+			left: 26px;
+			top: 191px;
+			color: #047ffc;
+			margin-top: 30px;
+		}
+
+		.box2 i {
+			position: absolute;
+			left: 24px;
+			bottom: 29px;
+			color: #047ffc;
+		}
+
+		.box2 {
+			box-shadow: -2px 4px 15px rgba(127, 119, 119, 0.86);
+			width: 100%;
+			height: auto;
+			padding-left: 30px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+
+		.box2 p {
+			margin-top: 5px;
+			font-size: 15px;
+			font-family: 'Raleway', sans-serif;
+			letter-spacing: 1px;
+		}
+
+		.button {
+			position: absolute;
+			top: 480px;
+			left: 545px;
+		}
+
+		.img-thumbnail {
+			width: 100%;
+			margin-top: 15px;
+		}
+
+
+		.popular {
+			text-align: center;
+			margin-top: 30px;
+		}
+
+		.popularhead h1 {
+			color: #323648;
+		}
+
+		.popularhead p {
+			color: #323648;
+		}
+
+		.popularimages p {
+			font-size: 20px;
+		}
+
+		.popularimages img {
+			width: 100%;
+			height: 300px;
+		}
+
+
+		.popularimages {
+			position: relative;
+			width: 100%;
+			height: auto;
+			overflow: hidden;
+		}
+
+		.text {
+			height: 0;
+			position: absolute;
+			font-size: 30px;
+			color: white;
+			background: black;
+			width: 100%;
+			transition: 1s;
+			overflow: hidden;
+			opacity: 0.8
+		}
+
+		.popularimages:hover .text {
+			bottom: 0;
+			transition: 1s;
+			height: 120px;
+		}
+
+		.footer {
+			margin-top: 30px;
+			background: black;
+			color: white;
+			width: 100%;
+			height: auto;
+		}
+
+		.footer h5 {
+			margin-top: 25px;
+		}
+
+		.footlist ul li {
+			background: black;
+			line-height: 1.5;
+			color: grey
+		}
+
+		.footlist2 p {
+			color: grey;
+			padding-top: 20px;
+		}
+
+		.footlist2 ul li a i {
+			color: white;
+			margin-left: 7px;
+			border: 1px groove white;
+			text-align: center;
+			font-size: 20px;
+			padding: 8px 8px;
+			background: #007bff;
+		}
+
+		.footlist3 ul li a {
+			color: grey;
+			line-height: 2;
+			text-align: center;
+			text-decoration: none;
+		}
+
+		.footlist3 ul {
+			margin-top: 25px;
+		}
+
+		.footlist3 h5 {
+			font-size: 14px;
+		}
+
+		.chnge {
+			padding-top: 71px;
+			line-height: 2;
+		}
+
+		.footerlist4 ul li a {
+			text-decoration: none;
+			color: grey;
+		}
+
+		.footerlist5 p {
+			margin-top: 30px;
+			text-align: justify;
+			color: grey;
+		}
+
+		.footerlist5 button {
+			width: 100%;
+			height: 50px;
+			border-color: grey;
+			color: grey;
+		}
+
+		.btn-outline-danger:hover {
+			color: grey;
+			background-color: transparent;
+			border-color: grey;
+		}
+
+		.footerlist5 i {
+			font-size: 20px;
+			margin-left: 63px;
+		}
+
+		.mainfooter {
+			height: auto;
+			background: #707579;
+			text-align: center;
+			color: black;
+		}
+
+		.last {
+			margin-top: 20px;
+		}
+	</style>
+
+<body>
+	<!--header-->
+	<section class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-5">
+					<div class="heading">
+						<i class="fas fa-map-signs"></i>
+						<a href="index.hml">
+							<h1>Grand Tour
+						</a></h1>
+					</div>
+				</div>
+				<div class="col-7">
+					<div class="list" style="float:right;">
+						<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+							<button class="navbar-toggler" type="button" data-toggle="collapse"
+								data-target="#navbarSupportedContent">
+								<span class="navbar-toggler-icon"></span>
+							</button>
+
+							<div class="collapse navbar-collapse headlist" id="navbarSupportedContent">
+								<ul class="navbar-nav mr-auto">
+									<li class="nav-item active">
+										<a class="nav-link" href="index.html">Home <span
+												class="sr-only">(current)</span></a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="about.html">About Us</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="services.html">Services</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="packages.html">Packages</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="contact.html">Contact</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link active" href="book Now.html">Book Now</a>
+									</li>
+						</nav>
+
+						</ul>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		</div>
+
+	</section>
+	<!--header-->
+
+
+
+	<!--slider-->
+	<Section class="slider">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="aboutimg">
+					<img src="images/banner3.jpg" class="aboutimg">
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--slider-->
+
+	<!--discover-->
+	<section class="discover">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="dishead">
+						<h1>Discover Our Tour Packages</h1>
+					</div>
+				</div>
+				<div class="col-md-10 center">
+					<div class="disheadp">
+						<p>Vestibulum tellus neque, sodales vel mauris at, rhoncus finibus augue. Vestibulum urna
+							ligula, molestie at ante ut, finibus vulputate felis.</p>
+					</div>
+				</div>
+				<br><br><br>
+				<div class="col-md-3">
+					<div class="box">
+						<img src="images/p1.jpg" alt="p1" class="img-thumbnail">
+						<i class="fas fa-map-marker-alt"></i>
+					</div>
+					<div class="box2">
+						<p>Paris, France.</p>
+						<h6>Sodales Vel Mauris</h6>
+						<p>Vestibulum tellus neque, et velit mauris at, augue.</p>
+						<i class="far fa-clock"></i>
+						<p>Duration : 10 Days</p>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="box">
+						<img src="images/p2.jpg" alt="p2" class="img-thumbnail">
+						<i class="fas fa-map-marker-alt"></i>
+					</div>
+					<div class="box2">
+						<p>Paris, France.</p>
+						<h6>Sodales Vel Mauris</h6>
+						<p>Vestibulum tellus neque, et velit mauris at, augue.</p>
+						<i class="far fa-clock"></i>
+						<p>Duration : 10 Days</p>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="box">
+						<img src="images/p3.jpg" alt="p3" class="img-thumbnail">
+						<i class="fas fa-map-marker-alt"></i>
+					</div>
+					<div class="box2">
+						<p>Paris, France.</p>
+						<h6>Sodales Vel Mauris</h6>
+						<p>Vestibulum tellus neque, et velit mauris at, augue.</p>
+						<i class="far fa-clock"></i>
+						<p>Duration : 10 Days</p>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="box">
+						<img src="images/p4.jpg" alt="p4" class="img-thumbnail">
+						<i class="fas fa-map-marker-alt"></i>
+					</div>
+					<div class="box2">
+						<p>Paris, France.</p>
+						<h6>Sodales Vel Mauris</h6>
+						<p>Vestibulum tellus neque, et velit mauris at, augue.</p>
+						<i class="far fa-clock"></i>
+						<p>Duration : 10 Days</p>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="box">
+						<img src="images/p1.jpg" alt="p4" class="img-thumbnail">
+						<i class="fas fa-map-marker-alt"></i>
+					</div>
+					<div class="box2">
+						<p>Paris, France.</p>
+						<h6>Sodales Vel Mauris</h6>
+						<p>Vestibulum tellus neque, et velit mauris at, augue.</p>
+						<i class="far fa-clock"></i>
+						<p>Duration : 10 Days</p>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="box">
+						<img src="images/p2.jpg" alt="p4" class="img-thumbnail">
+						<i class="fas fa-map-marker-alt"></i>
+					</div>
+					<div class="box2">
+						<p>Paris, France.</p>
+						<h6>Sodales Vel Mauris</h6>
+						<p>Vestibulum tellus neque, et velit mauris at, augue.</p>
+						<i class="far fa-clock"></i>
+						<p>Duration : 10 Days</p>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="box">
+						<img src="images/p3.jpg" alt="p4" class="img-thumbnail">
+						<i class="fas fa-map-marker-alt"></i>
+					</div>
+					<div class="box2">
+						<p>Paris, France.</p>
+						<h6>Sodales Vel Mauris</h6>
+						<p>Vestibulum tellus neque, et velit mauris at, augue.</p>
+						<i class="far fa-clock"></i>
+						<p>Duration : 10 Days</p>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="box">
+						<img src="images/p4.jpg" alt="p4" class="img-thumbnail">
+						<i class="fas fa-map-marker-alt"></i>
+					</div>
+					<div class="box2">
+						<p>Paris, France.</p>
+						<h6>Sodales Vel Mauris</h6>
+						<p>Vestibulum tellus neque, et velit mauris at, augue.</p>
+						<i class="far fa-clock"></i>
+						<p>Duration : 10 Days</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<!--discover-->
+
+	<!--content-->
+	<section class="content">
+		<div class="container">
+			<div class="row">
+
+			</div>
+		</div>
+	</section>
+	<!--content-->
+
+	<!--popular-->
+	<section class="popular">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="popularhead">
+						<h1>Popular Destinations</h1>
+						<p>Vestibulum tellus neque, sodales vel mauris at, rhoncus finibus augue. <br>Vestibulum urna
+							ligula, molestie at ante ut, finibus vulputate felis.</p>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="popularimages">
+						<p>CHINA</p>
+						<img src="images/china.jpg" alt="p4">
+						<div class="txt">
+							<div class="text">
+								<p>canada</p>
+								<button type="button" class="btn  bt">Book Now</button>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="col-md-3">
+					<div class="popularimages">
+						<p>MALAYSIA</p>
+						<img src="images/MALAYSIA.jpg" alt="p4">
+						<div class="txt">
+							<div class="text">
+								<p>MALAYSIA</p>
+								<button type="button" class="btn  bt">Book Now</button>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="col-md-3">
+					<div class="popularimages">
+						<p>JAPAN</p>
+						<img src="images/JAPAN.jpg" alt="p4">
+						<div class="txt">
+							<div class="text">
+								<p>JAPAN</p>
+								<button type="button" class="btn  bt">Book Now</button>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="col-md-3">
+					<div class="popularimages">
+						<p>SINGAPORE</p>
+						<img src="images/SINGAPORE.jpg" alt="p4">
+						<div class="txt">
+							<div class="text">
+								<p>SINGAPORE</p>
+								<button type="button" class="btn  bt">Book Now</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--popular-->
+
+	<!--footer-->
+	<section class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<div class="footlist">
+						<h5>Address</h5>
+						<ul class="list-group">
+							<li class="list-group-item ">Location : 1234 lock, Charlotte, North Carolina, United States
+							</li>
+							<li class="list-group-item">Phone : +12 534894364</li>
+							<li class="list-group-item">Morbi leo risus</li>
+							<li class="list-group-item">Email : info@example.com</li>
+							<li class="list-group-item">Fax : +12 534894364</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="footlist2">
+						<h5>About Us</h5>
+						<p>Vivamus magna justo, laci niats eget consectetur sed, conval lis at tellus. Nulla quis lorem
+							ipnt libero. Lorem ipsum dolor.</p>
+						<ul class="nav list1">
+							<li class="nav-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+							<li class="nav-item"><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+							<li class="nav-item"><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+							<li class="nav-item"><a href="#"><i class="fab fa-linkedin"></i></a></li>
+
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="footlist3">
+								<h5>Travel Places</h5>
+								<ul class="list-unstyled">
+									<li><a href="#">New Zealand</a></li>
+									<li><a href="#">Paris, France</a></li>
+									<li><a href="#">Los Angles</a></li>
+									<li><a href="#">Darlington</a></li>
+									<li><a href="#">Canada</a></li>
+									<li><a href="#">Canada</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-md-6">
+							<div class="footerlist4">
+								<ul class="list-unstyled chnge">
+									<li><a href="#">Spain</a></li>
+									<li><a href="#">Turkey</a></li>
+									<li><a href="#">Europe</a></li>
+									<li><a href="#">Italy</a></li>
+									<li><a href="#">Sweden</a></li>
+								</ul>
+
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+
+				<div class="col-md-3">
+					<div class="footerlist5">
+						<h5>Newsletter</h5>
+						<p>By subscribing to our mailing list you will always get latest news and updates from us.</p>
+						<button type="button" class="btn btn-outline-danger bt">Enter Your Email...<i
+								class="fab fa-telegram-plane"></i></button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--footer-->
+
+	<!--mainfooter-->
+	<section class="mainfooter">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="last">
+						<p>© 2019 Grand Tour. All Rights Reserved | Design by W3layouts</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--mainfooter-->
+	<script src="files/jquery-3.4.1.min.js"></script>
+	<script src="files/bootstrap.min.js"></script>
+</body>
+
+</html>
